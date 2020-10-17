@@ -1,0 +1,16 @@
+Spring-boot проект:
+Для работы программы необходимо установить Apache kafka
+Также нужно указать Ваш ip адресс в application.properties для обоих микросервисов 
+и для Apache kafka в server.properties.
+
+Данный проект содержит в себе 2 микросервиса.
+
+Первый(Producer) отправляет json-объект на брокер сообщений Apache kafka.
+Второй(Consumer) принимает отправленные на Apache kafka данные и сохраняет их в MongoDB.
+
+
+Docker images:
+https://hub.docker.com/search?q=default160797&type=image
+
+1. Producer - https://hub.docker.com/r/default160797/producer-img
+2. Consumer - https://hub.docker.com/r/default160797/consumer-img
